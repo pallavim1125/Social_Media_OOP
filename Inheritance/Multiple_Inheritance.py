@@ -18,6 +18,7 @@ class MusicPlayer:
 class SmartPhone(Camera, MusicPlayer):
     def __init__(self, brand, camera_quality, sound_quality):
         self.brand = brand
+    
         Camera.__init__(self, camera_quality)
         MusicPlayer.__init__(self, sound_quality)
 

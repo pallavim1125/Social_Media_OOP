@@ -1,4 +1,4 @@
-# Parent Class
+
 class Product:
     def __init__(self, product_name, price):
         self.product_name = product_name
@@ -9,7 +9,7 @@ class Product:
         print("Price:", self.price)
 
 
-# Child Class (Level 2)
+
 class ElectronicProduct(Product):
     def __init__(self, product_name, price, brand, warranty):
         super().__init__(product_name, price)
@@ -21,7 +21,7 @@ class ElectronicProduct(Product):
         print("Warranty:", self.warranty)
 
 
-# Grandchild Class (Level 3)
+
 class MobilePhone(ElectronicProduct):
     def __init__(self, product_name, price, brand, warranty, ram, storage):
         super().__init__(product_name, price, brand, warranty)
@@ -33,10 +33,10 @@ class MobilePhone(ElectronicProduct):
         print("Storage:", self.storage)
 
 
-# Creating Object
+
 mobile = MobilePhone("iPhone 15", 80000, "Apple", "1 Year", "8GB", "256GB")
 
-# Displaying All Details
+
 mobile.display_product()
 mobile.display_electronic_product()
 mobile.display_mobile_details()
